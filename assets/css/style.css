@@ -22,7 +22,7 @@ body {
 /*Header*/
 header {
     background-color: #ffffff;
-    padding: 10px;
+    padding: 0 1rem;
     position: fixed;
     z-index: 99;
     width: 100%;
@@ -33,16 +33,31 @@ header a {
     text-decoration: none;
     color: inherit;
 }
+
 #menu {
     font-size: 110%;
     letter-spacing: 4px;
     list-style: none;
 }
+
 #menu > li {
     margin-bottom: 1em;
 }
+
 .active {
     border-bottom: 1px solid #3a3a3a;
+}
+
+/*Navbar styles with dropdown toggle*/
+nav {
+    position: absolute;
+    background-color: #ffffff;
+    width: 100%;
+    left: 0;
+    padding: 0 1rem;
+    box-shadow: 0 2px 2px #3a3a3a;
+    display: none;
+    top: 100%;
 }
 h1 {
     font-family: 'Oswald', sans-serif;
@@ -50,6 +65,7 @@ h1 {
     letter-spacing: 2px;
     color: #252525 ;
 }
+
 /*Main content*/
 main {
     background-color: lightblue;
